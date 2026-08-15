@@ -1,59 +1,51 @@
 # JuanBojTallerHt1
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.3.
+Estructura del proyecto:
 
-## Development server
+Ht1_Taller_BIM4
 
-To start a local development server, run:
+Se reconoce que se uso IA para la realizacion del estilo de scss de ejemplo.
 
-```bash
-ng serve
-```
+src
+Contiene todo el codigo principal del proyecto ejecutable.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+app
+Nucleo del sistema dentro de src donde se organizan las vistas, los componentes y la lógica principal.
 
-## Code scaffolding
+features
+Se utiliza para separar las diferentes partes o funcionalidades de la aplicación.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+dashboard: Representa la pantalla principal o panel de control del usuario.
 
-```bash
-ng generate component component-name
-```
+services: Incluye servicios dedicados exclusivamente al dashboard para obtener sus propios datos.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+core
+Contiene elementos generales de la aplicación que se utilizan en diferentes partes y que forman parte de la estructura principal.
 
-```bash
-ng generate --help
-```
+components:
 
-## Building
+header: Muestra el encabezado principal de la página donde normalmente se ubica el logotipo u otros datos.
 
-To build the project run:
+navbar: Contiene la barra de navegación con los enlaces principales, buscador y menú de opciones.
 
-```bash
-ng build
-```
+footer: Muestra el pie de página con derechos de autor, contactos e información legal.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+announcement-bar: Muestra una barra fija en la parte superior para avisos o noticias importantes.
 
-## Running unit tests
+body: Muestra el cuerpo princpial de la pagina donde se visualiza la mayoria de contenido e informacion de esta.
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+services: Contiene servicios generales que pueden ser utilizados por diferentes partes de la aplicación.
 
-```bash
-ng test
-```
+shared
+Contiene componentes y servicios que pueden reutilizarse en diferentes pantallas para evitar repetir código.
 
-## Running end-to-end tests
+components:
 
-For end-to-end (e2e) testing, run:
+alert: Muestra cuadros de mensaje para avisar sobre errores, advertencias o confirmaciones.
 
-```bash
-ng e2e
-```
+form: Contiene elementos relacionados con formularios y campos para ingresar información.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+services: Contiene servicios que realizan funciones generales y pueden ser utilizados por diferentes componentes.
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+environments
+Contiene la configuración de los diferentes entornos de la aplicación, como las URL de las APIs. Estos valores pueden cambiar dependiendo de si el proyecto se está ejecutando en desarrollo, pruebas o producción.

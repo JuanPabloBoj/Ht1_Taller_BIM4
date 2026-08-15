@@ -1,0 +1,33 @@
+.main-navbar {
+  background-color: #1e293b;
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+
+    a {
+      color: #94a3b8;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+
+      &:hover, &.active {
+        color: #ffffff;
+      }
+    }
+  }
+
+  .nav-search input {
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #334155;
+    background-color: #0f172a;
+    color: #ffffff;
+    outline: none;
+  }
+}
